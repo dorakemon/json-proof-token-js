@@ -1,0 +1,22 @@
+{
+  "name": "json-proof-token",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:web": "wasm-pack build --target web --out-dir pkg_web",
+    "build:node": "wasm-pack build --target nodejs --out-dir pkg_node",
+    "test": "run-s test:*",
+    "test:rust": "cargo test",
+    "test:js": "vitest",
+    "check": "biome check",
+    "check:fix": "biome check --fix"
+  },
+  "dependencies": {
+    "json_proof_token_wasm": "file:./pkg_node"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "npm-run-all": "^4.1.5",
+    "vitest": "^3.1.1"
+  }
+}
