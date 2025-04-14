@@ -1,6 +1,8 @@
 [package]
-name = "json-proof-token-wasm"
-version = "0.1.0"
+name = "json-proof-token-js"
+authors = ["dorakemon"]
+description = "A minimal Rust-based JSON Web Proof (JWP) library exposed via JavaScript/TypeScript bindings, inspired by json-proof-token (CyberLinks) crate."
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]

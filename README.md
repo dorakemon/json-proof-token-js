@@ -39,6 +39,6 @@ A minimal project demonstrating JSON Web Proof (JWP) logic in Rust, exposed via 
 1. Write and run Rust tests in `src/*.rs` (or the `tests` module).
 2. Use `nr build` to rebuild the WASM package.
 3. Write and run JavaScript tests in `test/*.test.ts`.
-4. Once everything passes, we can consider publishing (strategy TBD).
+4. Once everything passes, we can publish `nr build && npm publish`.
 
 Happy coding!
